@@ -1,0 +1,212 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff; /* Fundo branco */
+    color: #003366; /* Letras azul escuro */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    padding: 15px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo img {
+    height: 30px;
+    margin-top: 4px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #66b3ff;
+}
+
+/* Título e texto introdutório */
+.titulo-servicos {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+.titulo-servicos .imagem {
+    display: block;                /* Para permitir margin auto */
+    margin: 20px auto;             /* Centraliza horizontalmente e adiciona espaço */
+    max-width: 100%;               /* Garante que não ultrapasse a largura da tela */
+    width: 200px;                  /* Define um tamanho fixo inicial */
+    height: auto;                  /* Mantém a proporção original */
+    border-radius: 10px;           /* Bordas arredondadas (opcional) */
+}
+
+
+.titulo-servicos h1 {
+    color: #003366;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.titulo-servicos p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 10px auto;
+    color: #004080;
+}
+
+/* Cards de Serviços */
+.servicos-detalhados {
+    padding: 0px 20px;
+}
+
+.servicos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #e6f2ff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.06);
+    padding: 25px 20px;
+    flex: 1 1 280px;
+    max-width: 300px;
+    text-align: center;
+    color: #003366;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 51, 102, 0.15);
+}
+
+.card h2 {
+    color: #0059b3;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #004080;
+    line-height: 1.4;
+}
+
+/* Benefícios dos Serviços */
+.beneficios-servicos {
+    background-color: #f0f8ff; /* Fundo azul claro suave */
+    padding: 40px 20px;
+    color: #003366;
+    text-align: center;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.beneficio-card {
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #003366;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 51, 102, 0.2);
+}
+
+.beneficio-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #002244;
+}
+
+.beneficio-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #004080;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .logo-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%;
+        flex: 1 1 100%;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

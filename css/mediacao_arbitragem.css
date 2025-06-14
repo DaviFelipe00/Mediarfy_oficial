@@ -1,0 +1,180 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ------------------ HEADER (mantido como estava) ------------------ */
+header {
+    background-color: #003366;
+    padding: 15px 0;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo img {
+    height: 30px;
+    margin-top: 4px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #66b3ff;
+}
+/* ------------------ CONTENT ------------------ */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content h2 {
+    color: #003366;
+    margin-bottom: 18px;
+    margin-top: 30px;
+    font-weight: 700;
+    border-left: 5px solid #66b3ff;
+    padding-left: 12px;
+    font-size: 1.7rem;
+}
+
+.content p,
+.content ul {
+    margin-left: 30px;
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+    color: #444;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+/* Link voltar */
+a.voltar {
+    color: #0059b3;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid #0059b3;
+    border-radius: 7px;
+    margin-top: 25px;
+}
+
+a.voltar:hover {
+    color: white;
+    background-color: #0059b3;
+}
+
+/* ------------------ DOWNLOADS ------------------ */
+#downloads {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #d1d9e6;
+}
+
+#downloads h2 {
+    color: #003366;
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+}
+
+#downloads p {
+    color: #5a6b81;
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+
+.download-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.download-list li {
+    margin-bottom: 12px;
+}
+
+.download-list a {
+    color: #1a73e8;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.download-list a:hover {
+    color: #003366;
+    text-decoration: underline;
+}
+
+/* ------------------ FOOTER ------------------ */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* ------------------ RESPONSIVO ------------------ */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .logo-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+.container {
+    max-width: 2000px;
+    margin: auto;
+    padding: 20px 20px;
+}
+
+
+    .content h2 {
+        font-size: 1.4rem;
+    }
+}

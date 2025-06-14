@@ -1,0 +1,351 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ------------------ HEADER ------------------ */
+header {
+    background-color: #003366;
+    padding: 15px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo img {
+    height: 30px;
+    margin-top: 4px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #66b3ff;
+}
+
+/* ------------------ CAROUSEL ------------------ */
+.carousel {
+    position: relative;
+    max-width: 1100px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+
+/* Botões */
+.carousel-buttons {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.carousel-buttons button {
+    background-color: rgba(0, 51, 102, 0.7);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+    background-color: rgba(0, 51, 102, 1);
+}
+
+
+/* ------------------ HERO ------------------ */
+.hero {
+    background-color: #e6f2ff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+    color: #0059b3;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.hero .botao-link {
+    display: inline-block;
+    background-color: #0059b3;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.hero .botao-link:hover {
+    background-color: #003366;
+}
+
+
+/* ------------------ SOBRE ------------------ */
+.sobre {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.sobre h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.sobre p {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+.sobre-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sobre-cards .card {
+    background-color: #e6f2ff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sobre-cards .card h3 {
+    color: #0059b3;
+    margin-bottom: 10px;
+}
+
+/* ------------------ SERVIÇOS ------------------ */
+.servicos {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.servicos h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.servicos-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.servicos-cards .card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.servicos-cards .card:hover {
+    transform: translateY(-5px);
+}
+
+.servicos-cards .card h3 {
+    color: #0059b3;
+    margin-bottom: 10px;
+}
+
+/* ------------------ CONTATO ------------------ */
+.contato {
+    background-color: #e6f2ff;
+    padding: 60px 20px;
+}
+
+.contato h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.contato p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.form-contato button {
+    background-color: #0059b3;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.form-contato button:hover {
+    background-color: #003366;
+}
+.call-to-action {
+    background-color: #f9f9f9; /* fundo branco */
+    color: #003366; /* azul escuro para o texto */
+    text-align: center;
+    padding: 40px 20px;
+
+
+}
+
+.call-to-action h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #0059b3; /* azul um pouco mais claro para o parágrafo */
+}
+
+.call-to-action .botao-link {
+    background-color: #003366; /* botão azul escuro */
+    color: white;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.call-to-action .botao-link:hover {
+    background-color: #0059b3; /* azul mais claro no hover */
+    color: white;
+}
+
+
+/* ------------------ FOOTER ------------------ */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* ------------------ CONTAINER PADRÃO ------------------ */
+.container {
+    max-width: 2000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* ------------------ RESPONSIVO ------------------ */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .logo-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 20px;
+}
+
+
+    .content h2 {
+        font-size: 1.4rem;
+    }
+}
+

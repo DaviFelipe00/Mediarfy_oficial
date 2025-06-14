@@ -1,0 +1,210 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ------------------ HEADER (não alterado) ------------------ */
+header {
+    background-color: #003366;
+    padding: 15px 0;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo img {
+    height: 30px;
+    margin-top: 4px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #66b3ff;
+}
+
+/* ------------------ MAIN CONTAINER ------------------ */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Título e localização */
+.titulo-servicos {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.bloco-local {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.bloco-local h1 {
+    margin-bottom: 20px;
+    color: #004aad;
+    font-size: 2rem;
+}
+
+.imagem-local {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.bloco-local p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Cards */
+.servicos-detalhados {
+    padding: 50px 20px;
+    background-color: #e9f0f7;
+}
+
+.container1.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+    color: #004aad;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+}
+
+.card p {
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #555;
+}
+
+.card a {
+    display: inline-block;
+    color: #004aad;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.card a:hover {
+    color: #0077ff;
+    text-decoration: underline;
+}
+
+/* Ícones dos cards */
+.card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #0077ff;
+    display: block;
+}
+
+/* Ícones das redes sociais */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons i {
+    color: #0077ff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #3399ff;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+/* ------------------ RESPONSIVO ------------------ */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px auto 40px auto;
+    }
+
+    .sobre-texto h1 {
+        font-size: 2rem;
+    }
+
+    .sobre-texto h2 {
+        font-size: 1.4rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .logo-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
